@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Generator</title>
+    <script src="scripts/databases/skillsAndTalens.js" defer></script>
+    <script src="scripts/databases/races.js" defer></script>
+    <script src="scripts/databases/proffesions.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <section class="landingPage">
+        <div>
+            Let's start.
+        </div>
+    </section>
+
+    <section class="chooseRace">
+        <div class="raceOption" id="chooseHuman">
+            <img src="imgs/race/chooseRaceHuman.jpg" alt="human">
+            <p>Human</p>
+        </div>
+
+        <div class="raceOption" id="chooseDwarf">
+            <img src="imgs/race/chooseRaceDwarf.jpg" alt="Dwarf">
+            <p>Dwarf</p>
+        </div>
+
+        <div class="raceOption" id="chooseHalfling">
+            <img src="imgs/race/chooseRaceHalfling.jpg" alt="Halfling">
+            <p>Halfling</p>
+        </div>
+
+        <div class="raceOption" id="chooseElf">
+            <img src="imgs/race/chooseRaceElf.jpg" alt="Elf">
+            <p>Elf</p>
+        </div>
+    </section>
+    
+
+    <section class="chooseProfession">
+        <div class="dwarfProffesions proffesionDiv">
+            <a class="dwarfTrollSlayer">
+                <img src="imgs/professions/trollSlayer.jpg">
+                <p>Troll slayer</p>
+            </a>
+
+            <a class="dwarfRuneSmith">
+                <img src="imgs/professions/runeSmith.jpg">
+                <p>Rune Smith</p>
+            </a>
+
+            <a class="dwarfThunderer">
+                <img src="imgs/professions/thunderer.jpg">
+                <p>Thunderer</p>
+            </a>
+        </div>
+        <div class="humanProffesions proffesionDiv">
+            <a class="humanPriest">
+                <img src="imgs/professions/priest.jpg">
+                <p>Priest</p> 
+            </a>
+
+            <a class="humanGuardian">
+                <img src="imgs/professions/guardian.jpg">
+                <p>Guardian</p>
+            </a>
+
+            <a class="humanTrader">
+                <img src="imgs/professions/trader.jpg">
+                <p>Trader</p>
+            </a>
+        </div>
+        <div class="halflingProffesions proffesionDiv">
+            <a class="halflingthief">
+                <img src="imgs/professions/thief.jpg">
+                <p>Thief</p>
+            </a>
+
+            <a class="halflingInnkeeper">
+                <img src="imgs/professions/innkeeper.jpg">
+                <p>Innkeeper</p>
+            </a>
+        </div>
+        <div class="elfProffesions proffesionDiv">
+            <a class="elfMage">
+                <img src="imgs/professions/mage.jpg">
+                <p>Mage</p>
+            </a>
+
+            <a class="elfRanger">
+                <img src="imgs/professions/ranger.jpg">
+                <p>Ranger</p>
+            </a>
+
+            <a class="elfHerald">
+                <img src="imgs/professions/herald.jpg">
+                <p>Herald</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="otherInformation">
+
+        <div class="_otherInf">
+            <h2>Name:</h2>
+            <input type="text" class="heroNameInput" name="heroName" required>
+            <h2>Home town:</h2>
+            <input type="text" class="heroHomeTownInput" name="heroHomeTown" required>
+            <h2>Religion</h2>
+            <input type="text" class="heroReligionInput" name="religion" required>
+            <h2>Descritpion</h2>
+            <textarea class="heroDescriptionInput" name="heroDescription">
+            </textarea>
+            <div class="yoo">Ready!</div>
+        </div>
+        
+    </section>
+
+
+    <section class="finalSection">
+        
+        <section class="finalSectionTop">
+
+            <div class="finalInformation">
+                <p class="heroName">Name: <span></span></p>
+                <p class="heroRace">Race: <span></span></p>
+                <p class="heroProfession">Profession: <span></span></p>
+                <p class="heroReligion">Religion: <span></span></p>
+                <p class="heroHomeTown">Home town: <span></span></p>
+                <p class="heroDescription">Description: <span></span></p>
+            </div>
+
+            <div class="_finalTableStats">
+                <table>
+
+                    <tr class="top">
+                        <td>Type</td>
+                        <td>WS</td>
+                        <td>BS</td>
+                        <td>S</td>
+                        <td>T</td>
+                        <td>Ag</td>
+                        <td>Int</td>
+                        <td>WP</td>
+                        <td>Fel</td>
+                    </tr>
+
+                    <tr class="baseStats">
+                        <td>Base: </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="proffesionStats">
+                        <td>Proff:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="developmentStats">
+                        <td>Dev:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="finalStats">
+                        <td>Final:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="developmentButtons">
+                        <td>
+                            Exp:
+                        </td>
+
+                        <td>
+                            <div class="developmentWS">+</div>
+                        </td>
+                        <td>
+                            <div class="developmentBS">+</div>
+                        </td>
+                        <td>
+                            <div class="developmentS">+</div>
+                        </td>
+                        <td>
+                            <div class="developmentT">+</div>
+                        </td>
+                        <td>
+                            <div class="developmentAg">+</div>
+                        </td>
+                        <td>
+                            <div class="developmentInt">+</div>
+                        </td>
+                        <td>
+                            <div class="developmentWP">+</div>
+                        </td>
+                        <td>
+                            <div class="developmentFel">+</div>
+                        </td>
+                    </tr>
+
+                    <tr class="rollADieRow">
+                        <td>
+                            Roll:
+                        </td>
+
+                        <td>
+                            <div class="rollADiceWS">|</div>
+                        </td>
+                        <td>
+                            <div class="rollADiceBS">|</div>
+                        </td>
+                        <td>
+                            <div class="rollADiceS">|</div>
+                        </td>
+                        <td>
+                            <div class="rollADiceT">|</div>
+                        </td>
+                        <td>
+                            <div class="rollADiceAg">|</div>
+                        </td>
+                        <td>
+                            <div class="rollADiceInt">|</div>
+                        </td>
+                        <td>
+                            <div class="rollADiceWP">|</div>
+                        </td>
+                        <td>
+                            <div class="rollADiceFel">|</div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </section>
+
+        <section class="finalSectionBottom">
+
+            <div class="finalInventory">
+                <ul></ul>
+            </div>
+
+            <div class="finalSkills">
+                <ul></ul>
+            </div>
+
+        </section>
+
+    </section>
+
+
+</body>
+</html>

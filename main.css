@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "Endor";
+    src: url("font/endor/endor___-webfont.woff") format("woff");
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: #fcfcfc;
+}
+
+body{
+    background-color: #18191A;
+}
+
+/* === LANDING PAGE === */
+/* === LANDING PAGE === */
+/* === LANDING PAGE === */
+
+.landingPage{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingPage div{
+    font-size: 48px;
+    border:2px solid #fcfcfc;
+    border-radius: 12px;
+    padding:20px;
+}
+
+.landingPage div:hover{
+    cursor:pointer;
+    box-shadow: 5px 5px 35px 27px rgba(0,0,0,0.88);
+    transition-duration: 0.5s;
+}
+
+/* === CHOOSE RACE === */
+/* === CHOOSE RACE === */
+/* === CHOOSE RACE === */
+
+.chooseRace{
+    display:none;
+    width:100%;
+    height:100vh;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+}
+
+.raceOption{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.raceOption img{
+    width:170px;
+    height:220px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.raceOption{
+    font-size: 24px;
+    border:2px solid goldenrod;
+}
+
+.raceOption:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 35px 27px rgba(0,0,0,0.88);
+    transition-duration: 0.5s;
+}
+
+/* === PROFESSIONS TABLE === */
+/* === PROFESSIONS TABLE === */
+/* === PROFESSIONS TABLE === */
+
+.chooseProfession{
+    display:none;
+    width:100%;
+    height:100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.humanProffesions, .dwarfProffesions, .halflingProffesions, .elfProffesions{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.proffesionDiv a{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    border:2px solid goldenrod;
+}
+
+.proffesionDiv a img{
+    width:170px;
+    height:220px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.proffesionDiv a:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 35px 27px rgba(0,0,0,0.88);
+    transition-duration: 0.5s;
+}
+
+/* === OTHER INFORMATION === */
+/* === OTHER INFORMATION === */
+/* === OTHER INFORMATION === */
+
+.otherInformation{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+}
+
+._otherInf{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:600px;
+    height:80%;
+}
+
+.otherInformation input{
+    color:#18191A;
+    font-size: 20px;
+    padding:10px;
+}
+
+.otherInformation textarea{
+    color:#18191A;
+    font-size: 20px;
+    padding:10px;
+    height:200px;
+    max-height: 200px;
+}
+
+.yoo{
+    background-color: #fcfcfc;
+    color:#18191A;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.yoo:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+    transition-duration: 0.5s;
+}
+
+/* === STATS TABLE === */
+/* === STATS TABLE === */
+/* === STATS TABLE === */
+
+._finalTableStats{
+    width:60%;
+    border:1px solid goldenrod;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    margin:0 auto;
+    border:1px solid goldenrod;
+}
+
+table tr td{
+    font-size: 20px;
+    border:1px solid goldenrod;
+    width:82px;
+    height: 70px;
+    text-align: center;
+}
+
+table tr td div{
+    margin:10px;
+    color: #fcfcfc;
+    background-color: goldenrod;
+    border-radius: 15px ;
+}
+
+table tr td div:hover{
+    color: goldenrod;
+    background-color: #18191A;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+
+/* === FINAL SECTION === */
+/* === FINAL SECTION === */
+/* === FINAL SECTION === */
+
+.finalSection hr{
+    border: 1px solid goldenrod;
+    margin: 10px;
+}
+
+.finalSection{
+    display:none;
+    border:1px solid goldenrod;
+}
+
+.finalSectionTop{
+    display:flex;
+    height:59vh;
+    flex-direction: row;
+}
+
+.finalSectionBottom{
+    display:flex;
+    height:39vh;
+    flex-direction: row;
+}
+
+.finalInformation{
+    width:40%;
+    padding:10px;
+    border:1px solid goldenrod;
+}
+
+.finalInformation p{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.finalInventory{
+    width:60%;
+    border:1px solid goldenrod;
+    height:100%;
+}
+
+.finalSkills{
+    width:40%;
+    border:1px solid goldenrod;
+    height:100%;
+}
+
+.finalInventory ul{
+    list-style: none;
+    font-size: 20px;
+    margin:20px;
+}
+
+.finalSkills ul{
+    list-style: none;
+    font-size: 20px;
+    margin:20px;
+}
+
+.finalInventory ul li{
+    margin: 5px 0;
+}
+
+.finalSkills ul li{
+    margin: 5px 0;
+}
+
+
